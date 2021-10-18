@@ -4,10 +4,9 @@
 // Add sum of numbers to N
 
 function addSumOfToN(n){
-    sum = 0;
-    
-    for(var i=1;i<n;i++){
-        sum+=i
-    }
-    return sum
+   if(n<0){
+       return n*(n+1)/2 * -1
+   } else {
+       return n*(n+1)/2
+   }
 }
